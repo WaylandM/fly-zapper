@@ -1,0 +1,305 @@
+{
+  "links": [
+    {
+      "id": "BJLxkkmRY9r",
+      "input": {
+        "nodeId": "rkokyQAY5H",
+        "pinKey": "HJIQ6AY8E"
+      },
+      "output": {
+        "nodeId": "Bk2yJmCtcB",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJgzSAK5r",
+      "input": {
+        "nodeId": "SyLbrRY9r",
+        "pinKey": "rJN4Ay4a8E"
+      },
+      "output": {
+        "nodeId": "H1G11mRFcr",
+        "pinKey": "BkPGzdFI4"
+      }
+    },
+    {
+      "id": "ByVUWHAtqS",
+      "input": {
+        "nodeId": "ByZI-rAF5r",
+        "pinKey": "rkGz3cY8E"
+      },
+      "output": {
+        "nodeId": "ByGI-rAF5S",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    },
+    {
+      "id": "Byexky7RF9r",
+      "input": {
+        "nodeId": "rkdJ1QCKqr",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "BJP11XAY9H",
+        "pinKey": "ryH6tSt8N"
+      }
+    },
+    {
+      "id": "H14xJyXAt9r",
+      "input": {
+        "nodeId": "H1G11mRFcr",
+        "pinKey": "Sy6LZuYIE"
+      },
+      "output": {
+        "nodeId": "Ska1JXAt5S",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJBIWHRK9B",
+      "input": {
+        "nodeId": "ByZI-rAF5r",
+        "pinKey": "SkyWnqYIN"
+      },
+      "output": {
+        "nodeId": "rJlLbH0tqS",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HkvIZHRKqS",
+      "input": {
+        "nodeId": "SyLbrRY9r",
+        "pinKey": "HylNR1VTU4"
+      },
+      "output": {
+        "nodeId": "rymIZrRYqH",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJqgyJXCt9S",
+      "input": {
+        "nodeId": "HkVkkmCF9r",
+        "pinKey": "r1n7kPYIN"
+      },
+      "output": {
+        "nodeId": "Hy8y1X0tcB",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJyxy1XCYqH",
+      "input": {
+        "nodeId": "B1yyXCK5H",
+        "pinKey": "r1H7MwK8E"
+      },
+      "output": {
+        "nodeId": "HkVkkmCF9r",
+        "pinKey": "SJricUK8V"
+      }
+    },
+    {
+      "id": "Sy88WHRKcH",
+      "input": {
+        "nodeId": "ByGI-rAF5S",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "SyLbrRY9r",
+        "pinKey": "rJ4RkEp84"
+      }
+    },
+    {
+      "id": "SyDek1mCF5H",
+      "input": {
+        "nodeId": "H1G11mRFcr",
+        "pinKey": "SJDbf_YUV"
+      },
+      "output": {
+        "nodeId": "rkokyQAY5H",
+        "pinKey": "r1DL6CFU4"
+      }
+    },
+    {
+      "id": "rJmxkk70t9B",
+      "input": {
+        "nodeId": "rkokyQAY5H",
+        "pinKey": "B11QT1qLN"
+      },
+      "output": {
+        "nodeId": "B1yyXCK5H",
+        "pinKey": "rylSGPt8E"
+      }
+    },
+    {
+      "id": "ryYgykXAK5H",
+      "input": {
+        "nodeId": "B1yyXCK5H",
+        "pinKey": "S1mxGvKUN"
+      },
+      "output": {
+        "nodeId": "ryKyJ7AK9B",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1yyXCK5H",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 1
+      },
+      "type": "wayland/ssd1306-oled-i2c/clear-display"
+    },
+    {
+      "boundLiterals": {
+        "BJgxWIFUV": "32"
+      },
+      "id": "BJP11XAY9H",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "wayland/ssd1306-oled-i2c/ssd1306-oled-i2c-device"
+    },
+    {
+      "id": "Bk2yJmCtcB",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "Skre8ROSv1-": "30"
+      },
+      "id": "ByGI-rAF5S",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 5
+      },
+      "type": "xod/core/delay"
+    },
+    {
+      "id": "ByZI-rAF5r",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 6
+      },
+      "type": "wayland/ssd1306-oled-i2c/stop-scroll"
+    },
+    {
+      "id": "H1G11mRFcr",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "wayland/ssd1306-oled-i2c/send-buffer-to-display"
+    },
+    {
+      "id": "HkVkkmCF9r",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "wayland/ssd1306-oled-i2c/init"
+    },
+    {
+      "id": "Hy8y1X0tcB",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "Ska1JXAt5S",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "H1j2-NpUE": "00h"
+      },
+      "id": "SyLbrRY9r",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 4
+      },
+      "type": "wayland/ssd1306-oled-i2c/start-scroll"
+    },
+    {
+      "id": "rJlLbH0tqS",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "rkdJ1QCKqr",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "boundLiterals": {
+        "ByW_2k9IN": "02h",
+        "Hypl61qUE": "0",
+        "S1gH6CKIN": "\"Measurement\\n complete.\""
+      },
+      "id": "rkokyQAY5H",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "wayland/ssd1306-oled-i2c/draw-text"
+    },
+    {
+      "id": "ryKyJ7AK9B",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "rymIZrRYqH",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/from-bus"
+    }
+  ]
+}

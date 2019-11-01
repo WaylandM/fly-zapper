@@ -1,0 +1,119 @@
+{
+  "links": [
+    {
+      "id": "B1BGshY5S",
+      "input": {
+        "nodeId": "BJaZsnFcS",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkqOb2K5B",
+        "pinKey": "ry3pcpqyX"
+      }
+    },
+    {
+      "id": "HkXHN3FcH",
+      "input": {
+        "nodeId": "SkqOb2K5B",
+        "pinKey": "rJjXFA9JQ"
+      },
+      "output": {
+        "nodeId": "HyAEVhK5S",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hyyp5hFcr",
+      "input": {
+        "nodeId": "H1_ZO3KcH",
+        "pinKey": "r1v0xCYJf"
+      },
+      "output": {
+        "nodeId": "Hyl343K9r",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rkOvchYcS",
+      "input": {
+        "nodeId": "H1_ZO3KcH",
+        "pinKey": "S1vneCK1z"
+      },
+      "output": {
+        "nodeId": "rybwMnY9H",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rkoB93tcr",
+      "input": {
+        "nodeId": "SkqOb2K5B",
+        "pinKey": "HJ6HsEngZ"
+      },
+      "output": {
+        "nodeId": "H1_ZO3KcH",
+        "pinKey": "BkE-fCKJG"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJaZsnFcS",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "H1_ZO3KcH",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/core/flip-n-times"
+    },
+    {
+      "id": "HyAEVhK5S",
+      "label": "PIN",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-port"
+    },
+    {
+      "id": "Hyl343K9r",
+      "label": "T",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "SkqOb2K5B",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 2
+      },
+      "type": "xod/gpio/digital-write"
+    },
+    {
+      "id": "rybwMnY9H",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}
