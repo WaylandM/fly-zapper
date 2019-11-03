@@ -1,0 +1,83 @@
+{
+  "links": [
+    {
+      "id": "BkE0mJj5B",
+      "input": {
+        "nodeId": "S1UaX1o9B",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "r1T67JjqS",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "H1GAmJoqB",
+      "input": {
+        "nodeId": "r1T67JjqS",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "SJXnmks9H",
+        "pinKey": "ByFmEf4US"
+      }
+    },
+    {
+      "id": "SJr0myscH",
+      "input": {
+        "nodeId": "HJY3mJocH",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SJXnmks9H",
+        "pinKey": "SkkV4GNLB"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "HJY3mJocH",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "S1UaX1o9B",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "Syp1NfVIS": "D2"
+      },
+      "id": "SJXnmks9H",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/common-hardware/mechanical-switch"
+    },
+    {
+      "id": "r1T67JjqS",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    }
+  ]
+}
