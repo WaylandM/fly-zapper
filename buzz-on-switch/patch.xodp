@@ -1,0 +1,257 @@
+{
+  "description": "Emit sound to confirm that switch has been activated.",
+  "links": [
+    {
+      "id": "HkSpesa5B",
+      "input": {
+        "nodeId": "ByMixjpcB",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "BkBGieiT5H",
+        "pinKey": "SkwRqaq17"
+      }
+    },
+    {
+      "id": "HkqMili6qB",
+      "input": {
+        "nodeId": "SJefolsT5H",
+        "pinKey": "S1vneCK1z"
+      },
+      "output": {
+        "nodeId": "HJNGjeo65S",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HyTMiljTcS",
+      "input": {
+        "nodeId": "BkBGieiT5H",
+        "pinKey": "ByXnYHPyb"
+      },
+      "output": {
+        "nodeId": "SJUzses6cr",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "SyLbispqS",
+      "input": {
+        "nodeId": "SJIgosa9S",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "H17_4sacr",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SyYzseiT5H",
+      "input": {
+        "nodeId": "SJefolsT5H",
+        "pinKey": "r1v0xCYJf"
+      },
+      "output": {
+        "nodeId": "SJzzsloT9S",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Syhzjeja5r",
+      "input": {
+        "nodeId": "SJUzses6cr",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "SJefolsT5H",
+        "pinKey": "BkE-fCKJG"
+      }
+    },
+    {
+      "id": "r1M6goT5r",
+      "input": {
+        "nodeId": "BkBGieiT5H",
+        "pinKey": "Syro9C9yQ"
+      },
+      "output": {
+        "nodeId": "SyWfigipcr",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r1aEjjaqH",
+      "input": {
+        "nodeId": "SJUzses6cr",
+        "pinKey": "ryTeUROHD1b"
+      },
+      "output": {
+        "nodeId": "ByGzoj6cr",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r1gX8i6qH",
+      "input": {
+        "nodeId": "SJefolsT5H",
+        "pinKey": "rknsx0tyf"
+      },
+      "output": {
+        "nodeId": "Sy8Aria5B",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "ryyy8s6qS",
+      "input": {
+        "nodeId": "Sy8Aria5B",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "SJxIBoacH",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "ByXnYHPyb": "0.3",
+        "Syro9C9yQ": "D9"
+      },
+      "id": "BkBGieiT5H",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 5
+      },
+      "type": "xod/gpio/pwm-write"
+    },
+    {
+      "id": "ByGzoj6cr",
+      "label": "DUTY",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "description": "Fires on writing complete",
+      "id": "ByMixjpcB",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Duty cycle value in range 0.0 … 1.0",
+      "id": "H17_4sacr",
+      "label": "DUTY",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Runs a new flip sequence. Cancels the existing if in progress.",
+      "id": "HJNGjeo65S",
+      "label": "SET",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "SJIgosa9S",
+      "label": "DUTY",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "boundLiterals": {
+        "r1AgIROHDJW": "0",
+        "ryTeUROHD1b": "0.1"
+      },
+      "id": "SJUzses6cr",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 4
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "boundLiterals": {
+        "SJ1e-CKkf": ".1"
+      },
+      "id": "SJefolsT5H",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/core/flip-n-times"
+    },
+    {
+      "description": "Should buzzer indicate that switch has activated a TTL pulse and started the timer (TRUE) or stopped timer (FALSE).",
+      "id": "SJxIBoacH",
+      "label": "START",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "description": "Time to be ON per cycle. In seconds.",
+      "id": "SJzzsloT9S",
+      "label": "Ton",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "r1AgIROHDJW": "2",
+        "ryTeUROHD1b": "1"
+      },
+      "id": "Sy8Aria5B",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "D12"
+      },
+      "description": "Digital pin",
+      "id": "SyWfigipcr",
+      "label": "PORT",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-port"
+    }
+  ]
+}
